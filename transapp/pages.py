@@ -5,14 +5,24 @@ from django.utils import translation
 from django.utils.translation import gettext as _
 
 
-class CustomPage(Page):
-    def get(self):
+class TransMixin:
+    def get_context_data(self, **context):
         user_language = self.session.config.get('language', 'en')
         translation.activate(user_language)
-        return super().get()
+        return super().get_context_data(**context)
 
 
-class MyPage(CustomPage):
+class Page(TransMixin, Page):
+    pass
+
+
+class WaitPage(TransMixin, WaitPage):
+    pass
+
+
+class MyPage(Page):
+    form_model = 'player'
+    form_fields = ['age', 'mood']
 
     def vars_for_template(self):
         return {'myparam': _('Dorow')}
@@ -24,7 +34,7 @@ class ResultsWaitPage(WaitPage):
         pass
 
 
-class Results(CustomPage):
+class Results(Page):
     pass
 
 

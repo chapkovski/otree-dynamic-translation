@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-01 23:46+0300\n"
+"POT-Creation-Date: 2019-02-02 14:33+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,14 +20,96 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: transapp/models.py:29
-msgid "smth dfrnt"
-msgstr "чтто дргуе"
+#: transapp/models.py:20
+msgid "WAT?!"
+msgstr "ЧЁ?"
 
-#: transapp/pages.py:17
+#: transapp/models.py:35
+msgid "How old are you?"
+msgstr "Сколько вам лет?"
+
+#: transapp/models.py:35
+msgid "Enter any number more than 0"
+msgstr "Введите любое значение больше 0"
+
+#: transapp/models.py:37
+msgid "Good"
+msgstr "Хорошее"
+
+#: transapp/models.py:37
+msgid "Bad"
+msgstr "Плохое"
+
+#: transapp/models.py:37
+msgid "Mood"
+msgstr "Настроение"
+
+#: transapp/models.py:37
+msgid "Your mood today?"
+msgstr "Ваше настроение сегодня?"
+
+#: transapp/pages.py:28
 msgid "Dorow"
 msgstr "Дороу"
 
+#: transapp/templates/transapp/MyPage.html:5
+msgid "Questionnaire"
+msgstr "Вопросник"
+
 #: transapp/templates/transapp/MyPage.html:9
-msgid "Hellow"
-msgstr "Приветики"
+msgid "jopa"
+msgstr "эсс"
+
+#: transapp/templates/transapp/MyPage.html:14
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "            life of citizens, so\n"
+#| "            next line here\n"
+#| "        "
+msgid ""
+"\n"
+"            life of citizens, so<br>\n"
+"            next line here\n"
+"        "
+msgstr ""
+"\n"
+"           1я строчка, so<br>\n"
+"            вторая стрчока\n"
+"        "
+
+#~ msgid "life of citizens, so"
+#~ msgstr "жопа длинный текст ептыть"
+
+#, fuzzy
+#~| msgid ""
+#~| "\n"
+#~| "        <div class=\"alert alert-danger\">\n"
+#~| "        life of citizens, so, if anything, the Morality Police won’t "
+#~| "hesitate to catch you butt naked in the act of wrongdoing.\n"
+#~| "        </div>\n"
+#~| "    "
+#~ msgid ""
+#~ "life of citizens, so, if anything, the Morality Police won’t hesitate to "
+#~ "catch you butt naked in the act of wrongdoing."
+#~ msgstr "жопа длинный текст"
+
+#~ msgid "ffff?"
+#~ msgstr "aaaaa"
+
+#, fuzzy
+#~| msgid "How old are you?"
+#~ msgid "How old are your"
+#~ msgstr "Сколько вам лет?"
+
+#~ msgid "starting point"
+#~ msgstr "НАЧАЛО ЕПТЫТЬ"
+
+#~ msgid "Hellow"
+#~ msgstr "Приветики"
+
+#~ msgid "What is your age?"
+#~ msgstr "Каков ваш возраст?"
+
+#~ msgid "smth dfrnt"
+#~ msgstr "чтто дргуе"

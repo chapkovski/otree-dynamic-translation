@@ -15,14 +15,14 @@ SESSION_CONFIGS = [
     {
         'name': 'transapp_en',
         'display_name': "transapp - English",
-        'num_demo_participants': 1,
+        'num_demo_participants': 2,
         'app_sequence': ['transapp'],
         'language':'en'
     },
     {
         'name': 'transapp_ru',
         'display_name': "transapp - Russian",
-        'num_demo_participants': 1,
+        'num_demo_participants': 2,
         'app_sequence': ['transapp'],
         'language': 'ru'
     },

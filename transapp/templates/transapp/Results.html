@@ -1,12 +1,12 @@
 {% extends "global/Page.html" %}
-{% load otree static i18n %}
+{% load otree static  %}
 
 {% block title %}
     Page title
 {% endblock %}
 
 {% block content %}
-    <h1>{% trans player.something %}</h1>
+    <h1>{{ player.something }}</h1>
     {% next_button %}
 {% endblock %}
 

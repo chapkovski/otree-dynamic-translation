@@ -1,13 +1,24 @@
 {% extends "global/Page.html" %}
-{% load otree static i18n%}
+{% load otree static i18n %}
 
 {% block title %}
-    Page title
+    {% blocktrans %}Questionnaire{% endblocktrans %}
 {% endblock %}
 
 {% block content %}
-      {% blocktrans  %}Hellow{% endblocktrans %}
-      {% trans myparam %}
+    {% trans 'jopa' %}
+    <h1>{{ Constants.translateble_constant }}
+    </h1>
+    <h2>{{ myparam }}</h2>
+    <div class="alert alert-danger">
+        {% blocktrans  %}
+            life of citizens, so<br>
+            next line here
+        {% endblocktrans %}
+    </div>
+    {% formfield player.age %}
+    {% formfield player.mood %}
+
     {% next_button %}
 
 {% endblock %}

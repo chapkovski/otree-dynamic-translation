@@ -1,4 +1,5 @@
 from os import environ
+from django.utils.translation import ugettext_lazy as _
 
 # if you set a property in SESSION_CONFIG_DEFAULTS, it will be inherited by all configs
 # in SESSION_CONFIGS, except those that explicitly override it.
@@ -10,6 +11,9 @@ SESSION_CONFIG_DEFAULTS = {
     'participation_fee': 0.00,
     'doc': "",
 }
+
+
+
 
 SESSION_CONFIGS = [
     {

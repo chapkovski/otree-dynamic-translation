@@ -25,7 +25,7 @@ class MyPage(Page):
     form_fields = ['age', 'mood']
 
     def vars_for_template(self):
-        return {'myparam': _('Dorow')}
+        return {'param_from_page': _('Dorow')}
 
 
 class ResultsWaitPage(WaitPage):

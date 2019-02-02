@@ -2,7 +2,7 @@ from otree.api import Currency as c, currency_range
 from ._builtin import Page, WaitPage
 from .models import Constants
 from django.utils import translation
-from django.utils.translation import gettext as _
+from django.utils.translation import ugettext_lazy as _
 
 
 class TransMixin:
@@ -29,7 +29,8 @@ class MyPage(Page):
 
 
 class ResultsWaitPage(WaitPage):
-
+    body_text = _('please fucka wait')
+    title_text=_('ooooh')
     def after_all_players_arrive(self):
         pass
 

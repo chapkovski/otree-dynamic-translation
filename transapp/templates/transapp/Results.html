@@ -1,12 +1,17 @@
 {% extends "global/Page.html" %}
-{% load otree static  %}
+{% load otree static i18n %}
 
 {% block title %}
-    Page title
+    {% trans 'Results' %}
 {% endblock %}
 
 {% block content %}
-    <h1>{{ player.something }}</h1>
+
+    {% blocktrans with duration=player.get_mood_display%}{{ duration }}  - player.id{% endblocktrans %}
+
+
+
+    <h1>{{ player.get_other.get_mood_display }}</h1>
     {% next_button %}
 {% endblock %}
 

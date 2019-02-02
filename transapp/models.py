@@ -2,10 +2,10 @@ from otree.api import (
     models, widgets, BaseConstants, BaseSubsession, BaseGroup, BasePlayer,
     Currency as c, currency_range
 )
-# from django.utils.translation import gettext as _
+
 from django.utils.translation import ugettext_lazy as _
 
-# from django.utils.translation import ugettext as _
+
 author = 'Philipp Chapkovski, HSE-Moscow, chapkovski@gmail.com'
 
 doc = """
@@ -36,5 +36,8 @@ class Group(BaseGroup):
 class Player(BasePlayer):
     age = models.IntegerField(label=_('How old are you?'), help_text=_('Enter any number more than 0'),
                               )
-    mood = models.StringField(choices=[_('Good'), _('Bad')], label=_('Mood'), help_text=_('Your mood today?'),
+    mood = models.IntegerField(choices=[(0,_('Good')),(1, _('Bad'))], label=_('Mood'), help_text=_('Your mood today?'),
                               widget=widgets.RadioSelectHorizontal)
+    @property
+    def get_other(self):
+        return self.get_others_in_group()[0]

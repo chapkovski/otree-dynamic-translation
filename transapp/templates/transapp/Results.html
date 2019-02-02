@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block content %}
-
+{{ myvar }}
     {% blocktrans with duration=player.get_mood_display%}{{ duration }}  - player.id{% endblocktrans %}
 
 

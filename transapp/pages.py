@@ -25,18 +25,21 @@ class MyPage(Page):
     form_fields = ['age', 'mood']
 
     def vars_for_template(self):
-        return {'param_from_page': _('Dorow')}
+        return {'attempt': 'popytka',
+                'myvar': _('myvarvalue')}
 
 
 class ResultsWaitPage(WaitPage):
     body_text = _('please fucka wait')
-    title_text=_('ooooh')
+    title_text = _('ooooh')
+
     def after_all_players_arrive(self):
         pass
 
 
 class Results(Page):
-    pass
+    def vars_for_template(self):
+        return {'myvar': ('myvarvalue')}
 
 
 page_sequence = [

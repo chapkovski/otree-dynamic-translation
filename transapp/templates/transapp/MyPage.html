@@ -1,17 +1,17 @@
 {% extends "global/Page.html" %}
-{% load otree static i18n %}
+{% load otree  i18n %}
 
 {% block title %}
     {% blocktrans %}Questionnaire{% endblocktrans %}
 {% endblock %}
 
 {% block content %}
-    {% trans 'jopa' %}
-    <h1>{{ Constants.example_constant }}
-    </h1>
-    <h2>{{ param_from_page }}</h2>
+
+    <h1>{% trans myvar %}</h1>
+        {% blocktrans %}asdf{% endblocktrans %}
+
     <div class="alert alert-danger">
-        {% blocktrans  %}
+        {% blocktrans %}
             life of citizens, so<br>
             next line here
         {% endblocktrans %}

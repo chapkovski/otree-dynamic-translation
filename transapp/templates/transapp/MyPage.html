@@ -1,21 +1,23 @@
 {% extends "global/Page.html" %}
+{# It is crucial to load i18n tag library before translation #}
 {% load otree  i18n %}
 
 {% block title %}
+    {#  That's the way to translate titles #}
     {% blocktrans %}Questionnaire{% endblocktrans %}
 {% endblock %}
 
 {% block content %}
 
     <h1>{% trans myvar %}</h1>
-        {% blocktrans %}asdf{% endblocktrans %}
+        {% blocktrans %}You can translate code in blocks like here{% endblocktrans %}
 
     <div class="alert alert-danger">
-        {% blocktrans %}
-            life of citizens, so<br>
-            next line here
+        {% blocktrans with id_in_group=player.id_in_group%}
+          You can also use variables, like this player id in group: {{ id_in_group }}
         {% endblocktrans %}
     </div>
+    {#  Formfields correctly marked for translation will be translated automatically  #}
     {% formfield player.age %}
     {% formfield player.mood %}
 

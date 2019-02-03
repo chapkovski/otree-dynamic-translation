@@ -144,7 +144,7 @@ where ``LANG`` should be changed to a language you intend to translate to
 (`ru` for Russian, `fr` for French, `de` for German etc. Full list of language
 codes can be found here_.
 
-.. _here: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+.. _here: http://www.i18nguy.com/unicode/language-identifiers.html
 
 That will generate a folder ``locale`` in your project subfolder, with
 corresponding subfolders for each language, and ``django.po`` files in it.
@@ -253,3 +253,10 @@ Before showing the page or waiting page to a final user
 the code reads a ``language`` parameter from ``session.config`` and activates
 it for a corresponding page.
 
+
+Minor things
+============
+
+# If you use translated choices for models, AND if you use dynamic switching, it is important
+    # to use tuples, not simple lists (like [_('Good'), _('Bad')]), because otherwise when you switch the language
+    # the allowed set of choices won't let user go further.

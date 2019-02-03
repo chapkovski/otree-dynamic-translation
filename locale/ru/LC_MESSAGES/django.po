@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-03 01:01+0300\n"
+"POT-Creation-Date: 2019-02-03 10:57+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,34 +20,33 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: transapp/models.py:20
-msgid "WAT?!"
-msgstr "ЧЁ?"
+#: transapp/models.py:21
+msgid "Some constant"
+msgstr ""
 
-#: transapp/models.py:36
+#: transapp/models.py:37
 msgid "How old are you?"
 msgstr "Сколько вам лет?"
 
-#: transapp/models.py:36
+#: transapp/models.py:38
 msgid "Enter any number more than 0"
 msgstr "Введите любое значение больше 0"
 
-#: transapp/models.py:38
+#: transapp/models.py:43
 msgid "Good"
 msgstr "Хорошее"
 
-#: transapp/models.py:38
+#: transapp/models.py:43
 msgid "Bad"
 msgstr "Плохое"
 
-#: transapp/models.py:39
+#: transapp/models.py:44
 msgid "Mood"
 msgstr "Настроение"
 
-#: transapp/models.py:40
-#, python-brace-format
-msgid "%(Constants.example_constant)s Your mood today?"
-msgstr "%(Constants.example_constant)s Настроение сегодня??"
+#: transapp/models.py:45
+msgid "What is your mood today?"
+msgstr ""
 
 #: transapp/pages.py:29
 msgid "myvarvalue"
@@ -90,3 +89,8 @@ msgstr "Итоги"
 msgid "%(duration)s  - player.id"
 msgstr "%(duration)s  -  айди игрога"
 
+#~ msgid "WAT?!"
+#~ msgstr "ЧЁ?"
+
+#~ msgid "%(Constants.example_constant)s Your mood today?"
+#~ msgstr "%(Constants.example_constant)s Настроение сегодня??"

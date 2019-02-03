@@ -1,17 +1,26 @@
 {% extends "global/Page.html" %}
+{# It is crucial to load i18n tag library before translation #}
 {% load otree static i18n %}
 
 {% block title %}
+    {# You can translate short strings directly in trans tag instead of wrappping it into transblock   #}
     {% trans 'Results' %}
 {% endblock %}
 
 {% block content %}
-{{ myvar }}
-    {% blocktrans with duration=player.get_mood_display%}{{ duration }}  - player.id{% endblocktrans %}
+    <div class="card">
+        <div class="card-body">
+            {% blocktrans with mood=player.get_other.get_mood_display %}Your partner's mood today: {{ mood }}{% endblocktrans %}
+        </div>
+    </div>
 
 
+     <div class="card">
+        <div class="card-body">
+            {% blocktrans with mood=player.get_mood_display %}Your mood today: {{ mood }}{% endblocktrans %}
+        </div>
+    </div>
 
-    <h1>{{ player.get_other.get_mood_display }}</h1>
     {% next_button %}
 {% endblock %}
 

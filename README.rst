@@ -97,12 +97,12 @@ library. So a typical heading of your oTree page will look like:
 There are two main tags you need to use for translation:
 
 
-``{% trans 'some_text %}``:
+``{% trans 'some text %}``:
     To translate a string of text, you can use {% trans %} block,
     It should be in quotation marks and cannot include any variables.
 
 
-``{% trans 'some_text %}``:
+``{% blocktrans %}  some text  {% endblocktrans %}``:
     it is more flexible alternative
     to ``{% trans %}`` block. You put any text between
     {% blocktrans %} and {% endblocktrans %} and it will be added
@@ -269,6 +269,10 @@ it for a corresponding page.
 Minor things
 ============
 
-# If you use translated choices for models, AND if you use dynamic switching, it is important
-    # to use tuples, not simple lists (like [_('Good'), _('Bad')]), because otherwise when you switch the language
-    # the allowed set of choices won't let user go further.
+If you use translated choices for models,
+AND if you use dynamic switching, it is important
+to use tuples (like [(0, _('Good')), (1, _('Bad'))] style),
+not simple lists
+(like [_('Good'), _('Bad')]), because otherwise
+when you switch the language the allowed set of
+choices won't let user go further.

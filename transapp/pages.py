@@ -4,8 +4,11 @@ from .models import Constants
 from django.utils import translation
 from django.utils.translation import ugettext_lazy as _
 
+
 # =====================================================================================================================
+# Use this for dynamically change language based on app config when session starts ====================================
 # For the following three classes the explanation is provided in Readme.
+
 class TransMixin:
     def get_context_data(self, **context):
         user_language = self.session.config.get('language', 'en')
@@ -19,6 +22,7 @@ class Page(TransMixin, Page):
 
 class WaitPage(TransMixin, WaitPage):
     pass
+
 
 # =====================================================================================================================
 # 'Normal pages' begin ================================================================================================

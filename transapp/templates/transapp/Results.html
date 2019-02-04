@@ -8,14 +8,14 @@
 {% endblock %}
 
 {% block content %}
-    <div class="card">
+    <div class="card my-3">
         <div class="card-body">
             {% blocktrans with mood=player.get_other.get_mood_display %}Your partner's mood today: {{ mood }}{% endblocktrans %}
         </div>
     </div>
 
 
-     <div class="card">
+     <div class="card my-3">
         <div class="card-body">
             {% blocktrans with mood=player.get_mood_display %}Your mood today: {{ mood }}{% endblocktrans %}
         </div>

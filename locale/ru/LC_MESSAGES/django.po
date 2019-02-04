@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-03 10:57+0300\n"
+"POT-Creation-Date: 2019-02-03 21:10+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Philipp Chapkovski <chapkovski@gmail.com> \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -20,77 +20,77 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: transapp/models.py:21
+#: transapp/models.py:22
 msgid "Some constant"
-msgstr ""
+msgstr "Какая-то константа"
 
-#: transapp/models.py:37
+#: transapp/models.py:40
 msgid "How old are you?"
 msgstr "Сколько вам лет?"
 
-#: transapp/models.py:38
+#: transapp/models.py:41
 msgid "Enter any number more than 0"
 msgstr "Введите любое значение больше 0"
 
-#: transapp/models.py:43
+#: transapp/models.py:46
 msgid "Good"
 msgstr "Хорошее"
 
-#: transapp/models.py:43
+#: transapp/models.py:46
 msgid "Bad"
 msgstr "Плохое"
 
-#: transapp/models.py:44
+#: transapp/models.py:47
 msgid "Mood"
 msgstr "Настроение"
 
-#: transapp/models.py:45
+#: transapp/models.py:48
 msgid "What is your mood today?"
-msgstr ""
+msgstr "Какое у вас настроение сегодня?"
 
-#: transapp/pages.py:29
+#: transapp/pages.py:35
 msgid "myvarvalue"
-msgstr "мойварвалью"
+msgstr "значение переменной"
 
-#: transapp/pages.py:33
-msgid "please fucka wait"
-msgstr "бля ждать!"
+#: transapp/pages.py:39
+msgid "You should wait"
+msgstr "Надо ждать"
 
-#: transapp/pages.py:34
-msgid "ooooh"
-msgstr "опаньки"
+#: transapp/pages.py:40
+msgid "Be patient!"
+msgstr "Будьте терпеливым!"
 
-#: transapp/templates/transapp/MyPage.html:5
+#: transapp/templates/transapp/MyPage.html:7
 msgid "Questionnaire"
 msgstr "Вопросник"
 
-#: transapp/templates/transapp/MyPage.html:11
-msgid "asdf"
-msgstr ""
+#: transapp/templates/transapp/MyPage.html:13
+msgid "You can translate code in blocks like here"
+msgstr "Вы можете переводить текст в блоках прямо вот так"
 
-#: transapp/templates/transapp/MyPage.html:14
+#: transapp/templates/transapp/MyPage.html:16
+#, python-format
 msgid ""
 "\n"
-"            life of citizens, so<br>\n"
-"            next line here\n"
+"          You can also use variables, like this player id in group: "
+"%(id_in_group)s\n"
 "        "
 msgstr ""
 "\n"
-"           1я строчка, so<br>\n"
-"            вторая стрчока\n"
+"          Вы также можете использовать переменные как это id игрока в группе: "
+"%(id_in_group)s\n"
 "        "
 
-#: transapp/templates/transapp/Results.html:5
+#: transapp/templates/transapp/Results.html:7
 msgid "Results"
-msgstr "Итоги"
+msgstr "Результаты"
 
-#: transapp/templates/transapp/Results.html:10
+#: transapp/templates/transapp/Results.html:13
 #, python-format
-msgid "%(duration)s  - player.id"
-msgstr "%(duration)s  -  айди игрога"
+msgid "Your partner's mood today: %(mood)s"
+msgstr "Настроение вашего партнера сегодня: %(mood)s"
 
-#~ msgid "WAT?!"
-#~ msgstr "ЧЁ?"
-
-#~ msgid "%(Constants.example_constant)s Your mood today?"
-#~ msgstr "%(Constants.example_constant)s Настроение сегодня??"
+#: transapp/templates/transapp/Results.html:20
+#, python-format
+msgid "Your mood today: %(mood)s"
+msgstr "Ваше настроение сегодня: %(mood)s"

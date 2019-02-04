@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-04 10:02+0300\n"
+"POT-Creation-Date: 2019-02-03 21:10+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Philipp Chapkovski <chapkovski@gmail.com> \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,14 +19,6 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
-
-#: _templates/otree/OutOfRangeNotification.html:6
-msgid "Finished"
-msgstr "Конец"
-
-#: _templates/otree/OutOfRangeNotification.html:9
-msgid "No more pages left to show."
-msgstr "Наше исследование закончено"
 
 #: transapp/models.py:22
 msgid "Some constant"
@@ -85,8 +77,8 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"          Вы также можете использовать переменные как это id игрока в "
-"группе: %(id_in_group)s\n"
+"          Вы также можете использовать переменные как это id игрока в группе: "
+"%(id_in_group)s\n"
 "        "
 
 #: transapp/templates/transapp/Results.html:7

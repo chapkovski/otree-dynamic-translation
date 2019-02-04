@@ -35,7 +35,8 @@ SESSION_CONFIGS = [
 # ISO-639 code
 # for example: de, fr, ja, ko, zh-hans
 LANGUAGE_CODE = 'en'
-
+LANGUAGE_SESSION_KEY = '_language'  # we need this to deal with the issue of the very last page
+# That is shown to users when they click 'Next' at the VERY last page
 # e.g. EUR, GBP, CNY, JPY
 REAL_WORLD_CURRENCY_CODE = 'USD'
 USE_POINTS = True

@@ -1,3 +1,5 @@
+
+
 oTree apps: Switch languages without changing settings
 =======================================================
 
@@ -30,10 +32,20 @@ used by Django when a specific language is used.
 
 
 1. Python code - things to do to make translation work
-----------------------------------------------------
+------------------------------------------------------
 
 You need to do two simple things to mark strings for translation
 in your Python code:
+
+0. Add the following parameter to your ``settings.py``:
+
+.. code-block:: python
+
+    LANGUAGE_SESSION_KEY = '_language'
+
+It is not necessary, but it will deal with the issue of correct translation
+of the very last page a user sees when they click 'Next' at the last page.
+(when they are informed that the study is finished).
 
 1. Import corresponding Python method:
 

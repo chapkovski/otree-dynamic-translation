@@ -3,6 +3,7 @@ from ._builtin import Page, WaitPage
 from .models import Constants
 from django.utils import translation
 from django.utils.translation import ugettext_lazy as _
+from django.conf import settings
 
 
 # =====================================================================================================================
@@ -13,6 +14,8 @@ class TransMixin:
     def get_context_data(self, **context):
         user_language = self.session.config.get('language', 'en')
         translation.activate(user_language)
+        if hasattr(settings,'LANGUAGE_SESSION_KEY'):
+            self.request.session[settings.LANGUAGE_SESSION_KEY] = user_language
         return super().get_context_data(**context)
 
 

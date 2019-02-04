@@ -13,8 +13,15 @@ class TransMixin:
     def get_context_data(self, **context):
         user_language = self.session.config.get('language', 'en')
         translation.activate(user_language)
-        return super().get_context_data(**context)
+        c = super().get_context_data(**context)
 
+        return c
+    def post(self):
+        print('AAAAAA', translation.get_language())
+        translation.deactivate_all()
+        print('AAAAAA', translation.get_language())
+        # raise OSError("JOPA!")
+        return super().post()
 
 class Page(TransMixin, Page):
     pass
@@ -51,7 +58,7 @@ class Results(Page):
 
 
 page_sequence = [
-    MyPage,
-    ResultsWaitPage,
-    Results
+    # MyPage,
+    # ResultsWaitPage,
+    # Results
 ]

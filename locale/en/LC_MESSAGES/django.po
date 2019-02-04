@@ -8,73 +8,70 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-04 10:02+0300\n"
+"POT-Creation-Date: 2019-02-04 10:03+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Philipp Chapkovski <chapkovski@gmail.com> \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
-"%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: _templates/otree/OutOfRangeNotification.html:6
 msgid "Finished"
-msgstr "Конец"
+msgstr "Finished"
 
 #: _templates/otree/OutOfRangeNotification.html:9
 msgid "No more pages left to show."
-msgstr "Наше исследование закончено"
+msgstr "No more pages left to show."
 
 #: transapp/models.py:22
 msgid "Some constant"
-msgstr "Какая-то константа"
+msgstr ""
 
 #: transapp/models.py:40
 msgid "How old are you?"
-msgstr "Сколько вам лет?"
+msgstr ""
 
 #: transapp/models.py:41
 msgid "Enter any number more than 0"
-msgstr "Введите любое значение больше 0"
+msgstr ""
 
 #: transapp/models.py:46
 msgid "Good"
-msgstr "Хорошее"
+msgstr ""
 
 #: transapp/models.py:46
 msgid "Bad"
-msgstr "Плохое"
+msgstr ""
 
 #: transapp/models.py:47
 msgid "Mood"
-msgstr "Настроение"
+msgstr ""
 
 #: transapp/models.py:48
 msgid "What is your mood today?"
-msgstr "Какое у вас настроение сегодня?"
+msgstr ""
 
 #: transapp/pages.py:35
 msgid "myvarvalue"
-msgstr "значение переменной"
+msgstr ""
 
 #: transapp/pages.py:39
 msgid "You should wait"
-msgstr "Надо ждать"
+msgstr ""
 
 #: transapp/pages.py:40
 msgid "Be patient!"
-msgstr "Будьте терпеливым!"
+msgstr ""
 
 #: transapp/templates/transapp/MyPage.html:7
 msgid "Questionnaire"
-msgstr "Вопросник"
+msgstr ""
 
 #: transapp/templates/transapp/MyPage.html:13
 msgid "You can translate code in blocks like here"
-msgstr "Вы можете переводить текст в блоках прямо вот так"
+msgstr ""
 
 #: transapp/templates/transapp/MyPage.html:16
 #, python-format
@@ -84,21 +81,17 @@ msgid ""
 "%(id_in_group)s\n"
 "        "
 msgstr ""
-"\n"
-"          Вы также можете использовать переменные как это id игрока в "
-"группе: %(id_in_group)s\n"
-"        "
 
 #: transapp/templates/transapp/Results.html:7
 msgid "Results"
-msgstr "Результаты"
+msgstr ""
 
 #: transapp/templates/transapp/Results.html:13
 #, python-format
 msgid "Your partner's mood today: %(mood)s"
-msgstr "Настроение вашего партнера сегодня: %(mood)s"
+msgstr ""
 
 #: transapp/templates/transapp/Results.html:20
 #, python-format
 msgid "Your mood today: %(mood)s"
-msgstr "Ваше настроение сегодня: %(mood)s"
+msgstr ""

@@ -30,6 +30,13 @@ SESSION_CONFIGS = [
         'app_sequence': ['transapp'],
         'language': 'ru'
     },
+    {
+        'name': 'switcher',
+        'display_name': "switcher",
+        'num_demo_participants': 1,
+        'app_sequence': ['switcher'],
+        'language': 'ru'
+    },
 ]
 
 # ISO-639 code

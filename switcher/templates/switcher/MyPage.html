@@ -1,12 +1,19 @@
-{% extends "global/Page.html" %}
-{% load otree static %}
+{% extends "switcher/Page.html" %}
+{% load otree i18n %}
 
 {% block title %}
-    Page title
+    {% trans 'Questionnaire' %}
 {% endblock %}
 
 {% block content %}
 
+
+
+{% formfields %}
     {% next_button %}
+
+{% endblock %}
+{% block scripts %}
+
 
 {% endblock %}

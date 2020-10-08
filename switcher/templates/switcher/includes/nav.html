@@ -1,0 +1,75 @@
+{% load otree i18n %}
+
+
+<div class="fixed-top">
+
+    <nav class="navbar navbar-expand navbar-expand-lg navbar-light bg-light">
+        <div class=" navbar-expand ml-auto  " id="navbarToggler">
+            <div class="btn-group navbar-nav ml-auto mt-2 mt-lg-0 " role="group" aria-label="Menu buttons">
+             {% get_current_language as LANGUAGE_CODE %}
+
+    <div class="controls  field-lang">
+        <div class="form-check form-check-inline">
+            <input type="radio" name="lang" value="en" required="" id="id_lang_0" class="form-check-input"
+                    {% if LANGUAGE_CODE == 'en' %}
+                   checked
+                    {% endif %}
+            >
+
+            <label for="id_lang_0" class="form-check-label">{% trans 'English' %}</label>
+        </div>
+
+
+        <div class="form-check form-check-inline">
+            <input type="radio" name="lang" value="ru" required="" id="id_lang_1" class="form-check-input"
+                    {% if LANGUAGE_CODE == 'ru' %}
+                   checked
+                    {% endif %}
+            >
+
+            <label for="id_lang_1" class="form-check-label">{% trans 'Russian' %}</label>
+        </div>
+
+
+    </div>
+
+            </div>
+        </div>
+    </nav>
+</div>
+
+    <script>
+        $('input[name="lang"]').on('click', function (e) {
+            window.location.search = `language=${this.value}`;
+        })
+    </script>
+<style>
+    .innerprogcont {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .progress2 {
+        height: 30px;
+        border-radius: 0px;
+    }
+
+    .progress1 {
+        height: 30px;
+    }
+
+    .item {
+        font-size: 15px;
+        text-align: center;
+        height: 30px;
+        border: 1px solid rgba(0, 0, 0, .125);
+        width: 100%
+
+    }
+
+    .item.active {
+        color: white;
+        background: #007bff !important;
+    }
+</style>

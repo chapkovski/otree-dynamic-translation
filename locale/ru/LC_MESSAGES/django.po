@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-03 21:10+0300\n"
+"POT-Creation-Date: 2020-10-08 12:06+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Philipp Chapkovski <chapkovski@gmail.com> \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,17 +20,34 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: transapp/models.py:22
-msgid "Some constant"
-msgstr "Какая-то константа"
-
-#: transapp/models.py:40
+#: switcher/models.py:35 transapp/models.py:40
 msgid "How old are you?"
 msgstr "Сколько вам лет?"
 
-#: transapp/models.py:41
+#: switcher/models.py:36 transapp/models.py:41
 msgid "Enter any number more than 0"
 msgstr "Введите любое значение больше 0"
+
+#: switcher/models.py:38 switcher/templates/switcher/includes/nav.html:19
+msgid "English"
+msgstr "Английский"
+
+#: switcher/models.py:38 switcher/templates/switcher/includes/nav.html:30
+msgid "Russian"
+msgstr "Русский"
+
+#: switcher/templates/switcher/MyPage.html:5
+#: transapp/templates/transapp/MyPage.html:7
+msgid "Questionnaire"
+msgstr "Вопросник"
+
+#: switcher/templates/switcher/MyPage2.html:5
+msgid "Next page"
+msgstr "Следующая страница"
+
+#: transapp/models.py:22
+msgid "Some constant"
+msgstr "Какая-то константа"
 
 #: transapp/models.py:46
 msgid "Good"
@@ -48,21 +65,17 @@ msgstr "Настроение"
 msgid "What is your mood today?"
 msgstr "Какое у вас настроение сегодня?"
 
-#: transapp/pages.py:35
+#: transapp/pages.py:38
 msgid "myvarvalue"
 msgstr "значение переменной"
 
-#: transapp/pages.py:39
+#: transapp/pages.py:42
 msgid "You should wait"
 msgstr "Надо ждать"
 
-#: transapp/pages.py:40
+#: transapp/pages.py:43
 msgid "Be patient!"
 msgstr "Будьте терпеливым!"
-
-#: transapp/templates/transapp/MyPage.html:7
-msgid "Questionnaire"
-msgstr "Вопросник"
 
 #: transapp/templates/transapp/MyPage.html:13
 msgid "You can translate code in blocks like here"
@@ -77,8 +90,8 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"          Вы также можете использовать переменные как это id игрока в группе: "
-"%(id_in_group)s\n"
+"          Вы также можете использовать переменные как это id игрока в "
+"группе: %(id_in_group)s\n"
 "        "
 
 #: transapp/templates/transapp/Results.html:7

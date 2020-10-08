@@ -8,7 +8,7 @@ from otree.api import (
     Currency as c,
     currency_range,
 )
-
+from django.utils.translation import ugettext_lazy as _
 
 author = 'Your name here'
 
@@ -32,4 +32,7 @@ class Group(BaseGroup):
 
 
 class Player(BasePlayer):
-    lang = models.StringField(choices=['en','ru'])
+    age = models.IntegerField(label=_('How old are you?'),
+                              help_text=_('Enter any number more than 0'),
+                              )
+    lang = models.StringField(choices=[('en', _("English")),('ru', _('Russian'))], widget=widgets.RadioSelectHorizontal)
